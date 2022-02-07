@@ -5,9 +5,10 @@ export default function BeanieBaby({ beanieBaby }) {
     <><div>
     
       <Link to="/BeanieDetail/:id">
-        <div>
-          <img src={beanieBaby.image} />
+        <div className='beanie-detail-card'>
           <p>{beanieBaby.title}</p>
+          <img src={beanieBaby.image} />
+          
         </div>
       </Link>
    

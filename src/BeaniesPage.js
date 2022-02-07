@@ -13,7 +13,7 @@ function App() {
       const from = page * perPage - perPage;
       const to = page * perPage;
       const beanies = await getBeanieBabies(from, to);
-
+      console.log(beanies);
       setBeanieBabies(beanies);
     }
 
@@ -31,6 +31,7 @@ function App() {
         <button >Next Page</button>
       </div>
       {/* pass the beanie babies into the BeaniesList component */}
+      <BeaniesList beanieBabies={beanieBabies} />
     </>
   );
 }

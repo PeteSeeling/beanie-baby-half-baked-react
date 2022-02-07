@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 export default function BeanieBaby({ beanieBaby }) {
   return (
     <><div>
-      <img src={beanieBaby.image} />
-      <p>{beanieBaby.name}</p>
-     
-
-      <Link to="/BeanieDetail"></Link>
-    </div><div className='beanie-details'>
+    
+      <Link to="/BeanieDetail/:id">
+        <div>
+          <img src={beanieBaby.image} />
+          <p>{beanieBaby.title}</p>
+        </div>
+      </Link>
+   
 
 
     </div></>

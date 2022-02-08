@@ -21,7 +21,7 @@ export default function App() {
       </ul>
       <div className='App'>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <BeaniesPage />
             {/* this home page route should list all the beanies */}
           </Route>
